@@ -1,0 +1,20 @@
+<div class="wrapper">
+    <h1 mat-dialog-title>Заявка</h1>
+    <div mat-dialog-content class="formContent">
+        <mat-form-field appearance="legacy">
+            <mat-label>ФИО</mat-label>
+            <input matInput placeholder="Иванов Иван Иванович" [(ngModel)]="name">
+            <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+            <!-- <mat-hint>ФИО</mat-hint> -->
+        </mat-form-field>
+        <mat-form-field appearance="legacy">
+            <mat-label>Номер телефона</mat-label>
+            <input matInput placeholder="" [(ngModel)]="phone">
+            <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
+            <!-- <mat-hint>ФИО</mat-hint> -->
+        </mat-form-field>
+    </div>
+    <div mat-dialog-actions>
+        <button mat-button (click)="sendRequest()">Отправить</button>
+    </div>
+</div>

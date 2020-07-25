@@ -1,0 +1,33 @@
+.wrapper {
+    width: 95%;
+    margin: 12% 0 0 5%;
+    display: flex;
+    .content {
+        width: 35%;
+        .tagline {
+            margin: 0;
+            font-size: 4rem;
+            line-height: 1.2;
+        }
+        .description {
+            font-size: 1rem;
+            margin-top: 2rem;
+            opacity: 0.6;
+        }
+        button {
+            border-radius: 50px;
+            font-size: 1.1rem;
+            padding: 0.5rem;
+            margin-top: 2rem;
+            width: 30%;
+        }
+    }
+    .background {
+        width: 50vw;
+        height: 55vh;
+        background-image: url("/../assets/images/6594.jpg");
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+}
