@@ -15,7 +15,7 @@ export class ApiService {
 
   sendToTelegram(name, phone) {
     
-    const url = 'http://pushmebot.ru/send?key=ba24b3dbd9ad28dd3231e88d98681929&message='
+    const url = 'https://pushmebot.ru/send?key=ba24b3dbd9ad28dd3231e88d98681929&message='
 
     const data = {
       name: name,
