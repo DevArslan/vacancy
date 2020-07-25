@@ -16,6 +16,7 @@ import {MatInputModule} from '@angular/material/input';
 //
 import { RequestComponent } from './main/request/request.component';
 import { FormsModule }   from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
 
 
 
@@ -38,6 +39,7 @@ import { FormsModule }   from '@angular/forms';
     MatDialogModule,
     FormsModule,
     MatInputModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
