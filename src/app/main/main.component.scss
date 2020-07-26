@@ -1,24 +1,46 @@
-.wrapper{
-    .header{
+.wrapper {
+    .header {
         margin: 3rem 8rem 0 3rem;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        .header-companyTitle{
+        .header-companyTitle {
             margin: 0;
-            color: #ff7272;
+            color: #3f51b5;
             font-size: 2rem;
             font-weight: bold;
         }
-        .header-nav{
+        .header-nav {
             width: 20%;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
     }
-    .content{
-        
+    .content {
     }
 }
 
+@media screen and (max-width: 768px) {
+    .wrapper {
+        background: rgb(232, 129, 238);
+        background: linear-gradient(45deg, rgba(232, 129, 238, 1) 0%, rgba(65, 235, 248, 1) 100%);
+        background-attachment: scroll;
+      
+        .header {
+            margin: 0 0 0 0;
+            justify-content: center;
+            padding-bottom: 2rem;
+            .header-companyTitle {
+                display: none;
+                margin: 0 auto;
+                color: #3f51b5;
+                font-size: 5rem;
+                font-weight: bold;
+            }
+            .header-nav {
+                display: none !important;
+            }
+        }
+    }
+}

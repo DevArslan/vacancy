@@ -13,6 +13,7 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatInputModule} from '@angular/material/input';
+import {MatCardModule} from '@angular/material/card';
 //
 import { RequestComponent } from './main/request/request.component';
 import { FormsModule }   from '@angular/forms';
@@ -39,6 +40,7 @@ import { HttpClientModule } from '@angular/common/http';
     MatDialogModule,
     FormsModule,
     MatInputModule,
+    MatCardModule,
     HttpClientModule,
   ],
   providers: [],

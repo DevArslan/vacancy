@@ -21,6 +21,9 @@
             margin-top: 2rem;
             width: 30%;
         }
+        .forMobile{
+            display: none;
+        }
     }
     .background {
         width: 50vw;
@@ -29,5 +32,139 @@
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
+    }
+    .steps {
+        display: none;
+    }
+}
+@media screen and (max-width: 768px) {
+    .wrapper {
+        width: 100%;
+        margin: 0 auto;
+        margin-top: 1.5rem;
+        display: block;
+        .content {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .forMobile {
+                display: block;
+                text-align: center;
+                color: #ffffff;
+                text-transform: uppercase;
+                font-weight: bolder;
+                height: 100vh;
+                .titleForMobile {
+                    line-height: 17vh;
+                    font-size: 16vh;
+                }
+                // #arrowAnim {
+                //     display: flex;
+                //     justify-content: center;
+                //     align-items: center;
+                //     transform: rotate(-90deg);
+                //     .arrow {
+                //         width: 5vw;
+                //         height: 5vw;
+                //         border: 2.5vw solid;
+                //         border-color: white transparent transparent white;
+                //         transform: rotate(-45deg);
+                //     }
+                //     .arrowSliding {
+                //         position: absolute;
+                //         -webkit-animation: slide 4s linear infinite;
+                //         animation: slide 4s linear infinite;
+                //     }
+    
+                //     .delay1 {
+                //         -webkit-animation-delay: 1s;
+                //         animation-delay: 1s;
+                //     }
+                //     .delay2 {
+                //         -webkit-animation-delay: 2s;
+                //         animation-delay: 2s;
+                //     }
+                //     .delay3 {
+                //         -webkit-animation-delay: 3s;
+                //         animation-delay: 3s;
+                //     }
+                   
+                // }
+                // @-webkit-keyframes slide {
+                //     0% {
+                //         opacity: 0;
+                //         transform: translateX(15vw);
+                //     }
+                //     20% {
+                //         opacity: 1;
+                //         transform: translateX(9vw);
+                //     }
+                //     80% {
+                //         opacity: 1;
+                //         transform: translateX(-9vw);
+                //     }
+                //     100% {
+                //         opacity: 0;
+                //         transform: translateX(-15vw);
+                //     }
+                // }
+                // @keyframes slide {
+                //     0% {
+                //         opacity: 0;
+                //         transform: translateX(15vw);
+                //     }
+                //     20% {
+                //         opacity: 1;
+                //         transform: translateX(9vw);
+                //     }
+                //     80% {
+                //         opacity: 1;
+                //         transform: translateX(-9vw);
+                //     }
+                //     100% {
+                //         opacity: 0;
+                //         transform: translateX(-15vw);
+                //     }
+                // }
+            }
+            .tagline {
+                display: none;
+                margin: 0;
+                font-size: 4rem;
+                line-height: 1.2;
+            }
+            .description {
+                display: none;
+                font-size: 1rem;
+                margin-top: 2rem;
+                opacity: 0.6;
+            }
+            button {
+                z-index: 99999;
+                width: 90%;
+                position: fixed;
+                bottom: 5%;
+                border-radius: 50px;
+                font-size: 5rem;
+                padding: 0.5rem;
+                margin-top: 2rem;
+            }
+            
+            
+
+            
+        }
+        .background {
+            display: none;
+        }
+        .steps {
+            display: block;
+            text-align: center;
+            .steps-card {
+                margin: 3rem auto;
+                width: 80%;
+            }
+        }
     }
 }
