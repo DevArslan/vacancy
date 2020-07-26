@@ -13,9 +13,16 @@ export class ApiService {
   requestOK = new Subject<string>()
   error = new Subject<string>()
 
-  sendToTelegram(name, phone) {
+  sendToTelegram(name, phone, gender) {
     
-    const url = 'https://pushmebot.ru/send?key=ba24b3dbd9ad28dd3231e88d98681929&message='
+    let url = ''
+
+    if (gender == true){
+      url = 'https://pushmebot.ru/send?key=ba24b3dbd9ad28dd3231e88d98681929&message='
+    }else{
+      url = 'https://pushmebot.ru/send?key=6172db07424b63ffda973348c42d5584&message='
+    }
+    
 
     const data = {
       name: name,

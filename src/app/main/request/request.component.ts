@@ -11,13 +11,12 @@ export class RequestComponent implements OnInit {
   
   name: string
   phone: string
+  gender: boolean
 
   constructor(private API : ApiService) { }
 
   sendRequest(){
-    console.log(this.name)
-    console.log(this.phone)
-    this.API.sendToTelegram(this.name, this.phone)
+    this.API.sendToTelegram(this.name, this.phone, this.gender)
   }
 
   ngOnInit(): void {

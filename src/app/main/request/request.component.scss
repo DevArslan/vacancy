@@ -1,4 +1,8 @@
 .formContent{
     display: flex;
     flex-direction: column;
+    overflow: hidden;
+    mat-slide-toggle{
+        padding: 0.5rem 0 0.5rem 0 ;
+    }
 }

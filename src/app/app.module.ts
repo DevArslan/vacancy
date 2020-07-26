@@ -14,6 +14,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatDialogModule} from '@angular/material/dialog';
 import {MatInputModule} from '@angular/material/input';
 import {MatCardModule} from '@angular/material/card';
+import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 //
 import { RequestComponent } from './main/request/request.component';
 import { FormsModule }   from '@angular/forms';
@@ -42,6 +43,7 @@ import { HttpClientModule } from '@angular/common/http';
     MatInputModule,
     MatCardModule,
     HttpClientModule,
+    MatSlideToggleModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
