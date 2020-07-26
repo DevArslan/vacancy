@@ -13,29 +13,47 @@ export class ApiService {
   requestOK = new Subject<string>()
   error = new Subject<string>()
 
-  sendToTelegram(name, phone, gender) {
-    
-    let url = ''
+  checkUserToTelegram(){
 
-    if (gender == true){
-      url = 'https://pushmebot.ru/send?key=ba24b3dbd9ad28dd3231e88d98681929&message='
-    }else{
-      url = 'https://pushmebot.ru/send?key=6172db07424b63ffda973348c42d5584&message='
-    }
+    let url = 'https://pushmebot.ru/send?key='
+    let keys = ['ba24b3dbd9ad28dd3231e88d98681929','6172db07424b63ffda973348c42d5584']
+
+    keys.forEach(key => {
+      this.http.post(url + key+ '&message=' + 'Пользователь посетил сайт: ' + 'дата: ' + new Date().getDate() +'/' + (new Date().getMonth()+1) + ' время ' + new Date().getHours() + ':' + new Date().getMinutes(),'').subscribe(
+        (res) => {
+          // this.requestOK.next('Пользователь посетил сайт')
+        },
+        (err) => {
+          // this.error.next(err)
+        }
+      );
+    })
+
     
+  }
+
+  sendToTelegram(name, phone, messenger) {
+    
+    let url = 'https://pushmebot.ru/send?key='
+    let keys = ['ba24b3dbd9ad28dd3231e88d98681929','6172db07424b63ffda973348c42d5584']
 
     const data = {
       name: name,
       phone: phone,
     };
 
-    this.http.post(url + 'ФИО: ' + data.name + ' ' + 'Номер телефона: ' + data.phone ,'').subscribe(
-      (res) => {
-        this.requestOK.next('Заявка отправлена')
-      },
-      (err) => {
-        this.error.next('Заявка не отправлена')
-      }
-    );
+    keys.forEach(key => {
+      this.http.post(url + key+ '&message=' + 'ФИО: ' + data.name + ' ' + 'Номер телефона: ' + data.phone + ' ' + 'Связаться по: ' + messenger,'').subscribe(
+        (res) => {
+          
+          
+        },
+        (err) => {
+          this.error.next('Заявка не отправлена')
+        }
+      );
+    });
+    this.requestOK.next('Заявка отправлена')
+
   }
 }

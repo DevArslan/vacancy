@@ -11,12 +11,14 @@ export class RequestComponent implements OnInit {
   
   name: string
   phone: string
-  gender: boolean
+  // gender: boolean
+  messenger: string
+  messengers: string[] = ['Позвоните мне','WhatsApp','Telegram','Viber']
 
   constructor(private API : ApiService) { }
 
   sendRequest(){
-    this.API.sendToTelegram(this.name, this.phone, this.gender)
+    this.API.sendToTelegram(this.name, this.phone, this.messenger)
   }
 
   ngOnInit(): void {

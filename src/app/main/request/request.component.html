@@ -13,7 +13,16 @@
             <!-- <mat-icon matSuffix>sentiment_very_satisfied</mat-icon> -->
             <!-- <mat-hint>ФИО</mat-hint> -->
         </mat-form-field>
-        <mat-slide-toggle [(ngModel)]="gender" name="enableWifi">Консультант девушка</mat-slide-toggle>
+        <mat-form-field appearance="legacy">
+            <mat-label>Связаться по</mat-label>
+            <mat-select  required [(ngModel)]="messenger">
+              <mat-option>--</mat-option>
+              <mat-option *ngFor="let messenger of messengers" [value]="messenger">
+                {{messenger}}
+              </mat-option>
+            </mat-select>
+          </mat-form-field>
+        <!-- <mat-slide-toggle [(ngModel)]="gender" name="enableWifi">Консультант девушка</mat-slide-toggle> -->
     </div>
     <div mat-dialog-actions>
         <button mat-raised-button color="accent" (click)="sendRequest()" [mat-dialog-close]="true">Отправить</button>
