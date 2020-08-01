@@ -21,6 +21,8 @@ import {MatSnackBarModule} from '@angular/material/snack-bar';
 import { RequestComponent } from './main/request/request.component';
 import { FormsModule }   from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
+import { PricingComponent } from './main/pricing/pricing.component';
+import { PricingCardComponent } from './main/pricing/pricing-card/pricing-card.component';
 
 
 
@@ -31,6 +33,8 @@ import { HttpClientModule } from '@angular/common/http';
     AboutComponent,
     StartPageComponent,
     RequestComponent,
+    PricingComponent,
+    PricingCardComponent,
     
   ],
   imports: [

@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { MainComponent } from "./main/main.component";
 import { StartPageComponent } from "./main/start-page/start-page.component";
 import { RequestComponent } from "./main/request/request.component";
+import { PricingComponent } from "./main/pricing/pricing.component";
 
 const routes: Routes = [
   { 
@@ -13,6 +14,10 @@ const routes: Routes = [
       {
         path: '', 
         component: StartPageComponent 
+      },
+      {
+        path: 'pricing', 
+        component: PricingComponent 
       },
       {
         path: 'request', 

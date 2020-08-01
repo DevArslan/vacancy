@@ -1,0 +1,19 @@
+<mat-card class="card" (click) = "openModal()">
+    <mat-card-header class="card-header">
+        <mat-card-title class="card-title">{{data.title}}</mat-card-title>
+    </mat-card-header>
+    <img src="{{data.imageLink}}">
+    <mat-card-content>
+        <p class="cost">{{data.cost}} <span class="currency">р.</span> </p>
+        <p class="description"> {{data.description}} </p>
+        <ul class="todoList">
+            <li class="todoList-item" *ngFor="let todo of data.todos">
+                <mat-icon aria-hidden="false" color="primary">done</mat-icon>
+                <span>{{todo}}</span>
+            </li>
+        </ul>
+    </mat-card-content>
+    <!-- <mat-card-actions>
+        <button mat-raised-button color="accent" class="buyButton" (click) = "openModal()">Подать заявку</button>
+    </mat-card-actions> -->
+</mat-card>
