@@ -14,14 +14,14 @@ export class PricingComponent implements OnInit {
       title : 'Экономный',
       cost : 500,
       description: 'Бюджетное решение, повышающее ваши шансы устроиться на желаемую работу ',
-      imageLink: '../../assets/images/basic.png',
+      imageLink: '../../assets/images/simple.png',
       todos: ['Составление резюме', 'Консультация со специалистом единоразово']
     },
     {
       title : 'Базовый',
       cost : 1000,
       description: 'Оптимальное решение для большинства людей',
-      imageLink: '../../assets/images/simple.png',
+      imageLink: '../../assets/images/basic.png',
       todos: ['Составление резюме', 'Консультация ограниченное количество раз']
     },
     {
