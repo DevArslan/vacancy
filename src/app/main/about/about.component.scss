@@ -1,0 +1,25 @@
+$yellow: #F9B225;
+$blue: #0056EC;
+$green: #00AD9F;
+
+.wrapper{
+    margin: 0 auto 0 auto;
+    width: 80%;
+    .description{
+        font-size: 3rem;
+        line-height: 4rem;
+        font-weight: 300;
+        .description-image{
+            float: right;
+        }
+        .description--yellow{
+            color: $yellow;
+        }
+        .description--blue{
+            color: $blue;
+        }
+        .description--green{
+            color: $green;
+        }
+    }
+}
