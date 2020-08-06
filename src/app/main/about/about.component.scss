@@ -32,17 +32,18 @@ $green: #00ad9f;
             font-size: 7rem;
             line-height: 10rem;
             font-weight: 400;
+            text-align: justify;
             .description-image {
                 display: none;
             }
             .description--yellow {
-                color: #ff4081;
+                color: #ffffff;
             }
             .description--blue {
-                color: $blue;
+                color: #ffffff;
             }
             .description--green {
-                color: #41ebf8;
+                color: #ffffff;
             }
         }
     }
