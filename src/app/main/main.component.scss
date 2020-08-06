@@ -19,10 +19,12 @@
             align-items: center;
         }
     }
+    .mobileNav {
+        display: none;
+    }
     .content {
         margin-top: 4rem;
     }
-    
 }
 
 @media screen and (max-width: 768px) {
@@ -30,7 +32,7 @@
         background: rgb(232, 129, 238);
         background: linear-gradient(45deg, rgba(232, 129, 238, 1) 0%, rgba(65, 235, 248, 1) 100%);
         background-attachment: scroll;
-      
+
         .header {
             margin: 0 0 0 0;
             justify-content: center;
@@ -45,6 +47,17 @@
             .header-nav {
                 display: none !important;
             }
+        }
+        .mobileNav {
+            display: block;
+            z-index: 99999;
+            width: 90%;
+            position: fixed;
+            top: 1%;
+            left: 1%;
+            border-radius: 50px;
+            font-size: 5rem;
+            padding: 0.5rem;
         }
     }
 }

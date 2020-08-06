@@ -4,13 +4,35 @@
             <p class="header-companyTitle" routerLink="/">Vacancy</p>
         </div>
         <div class="header-nav">
-            <a mat-raised-button  routerLink="/about">О нас</a>
+            <a mat-raised-button routerLink="/about">О нас</a>
             <a mat-raised-button routerLink="/pricing">Цены</a>
             <button mat-raised-button color="accent" (click)="openModal()">Подать заявку</button>
         </div>
+    </div>
+    <div class="mobileNav">
+        <button mat-raised-button [matMenuTriggerFor]="menu" aria-label="Example icon-button with a menu" color="accent">
+            Меню
+        </button>
+        <mat-menu #menu="matMenu">
+            <button mat-menu-item routerLink="/">
+                <mat-icon color="primary">home</mat-icon>
+                <span>На главную</span>
+            </button>
+            <button mat-menu-item routerLink="/about">
+                <mat-icon color="accent">favorite_border</mat-icon>
+                <span>О нас</span>
+            </button>
+            <button mat-menu-item routerLink="/pricing">
+                <mat-icon style="color:#41ebf8" >payments</mat-icon>
+                <span>Цены</span>
+            </button>
+            <button mat-menu-item (click)="openModal()">
+                <mat-icon color="accent">edit</mat-icon>
+                <span>Подать заявку</span>
+            </button>
+        </mat-menu>
     </div>
     <div class="content">
         <router-outlet></router-outlet>
     </div>
 </div>
-

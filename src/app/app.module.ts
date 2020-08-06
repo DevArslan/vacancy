@@ -17,6 +17,7 @@ import {MatCardModule} from '@angular/material/card';
 import {MatSlideToggleModule} from '@angular/material/slide-toggle';
 import {MatSelectModule} from '@angular/material/select';
 import {MatSnackBarModule} from '@angular/material/snack-bar';
+import {MatMenuModule} from '@angular/material/menu';
 //
 import { RequestComponent } from './main/request/request.component';
 import { FormsModule }   from '@angular/forms';
@@ -52,6 +53,7 @@ import { PricingCardComponent } from './main/pricing/pricing-card/pricing-card.c
     MatSlideToggleModule,
     MatSelectModule,
     MatSnackBarModule,
+    MatMenuModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

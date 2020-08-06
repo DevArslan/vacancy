@@ -7,3 +7,11 @@
         width: 27%;
     }
 }
+@media screen and (max-width: 768px) {
+    .wrapper{
+        display: block;
+        .pricingCard{
+            margin-top: 1rem;
+        }
+    }
+}

@@ -1,25 +1,49 @@
-$yellow: #F9B225;
-$blue: #0056EC;
-$green: #00AD9F;
+$yellow: #f9b225;
+$blue: #0056ec;
+$green: #00ad9f;
 
-.wrapper{
+.wrapper {
     margin: 0 auto 0 auto;
     width: 80%;
-    .description{
+    .description {
         font-size: 3rem;
         line-height: 4rem;
         font-weight: 300;
-        .description-image{
+        .description-image {
             float: right;
         }
-        .description--yellow{
+        .description--yellow {
             color: $yellow;
         }
-        .description--blue{
+        .description--blue {
             color: $blue;
         }
-        .description--green{
+        .description--green {
             color: $green;
+        }
+    }
+}
+@media screen and (max-width: 768px) {
+    .wrapper {
+        height: 100vh;
+        .description {
+            margin-top: 15rem;
+            color: #ffffff;
+            font-size: 7rem;
+            line-height: 10rem;
+            font-weight: 400;
+            .description-image {
+                display: none;
+            }
+            .description--yellow {
+                color: #ff4081;
+            }
+            .description--blue {
+                color: $blue;
+            }
+            .description--green {
+                color: #41ebf8;
+            }
         }
     }
 }
